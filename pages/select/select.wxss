@@ -1,0 +1,35 @@
+.content {
+  position: relative;
+  width: 100%;
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+
+.select-wrap, .select-show {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+
+.show-wrap {
+  padding: 30rpx 0;
+  border-top: 1px solid #ccc;
+}
+
+.show-wrap text {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+
+.show-wrap button {
+  width: 290rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 14px;
+}

@@ -1,0 +1,18 @@
+<view class="content">
+  <view class="select-wrap">
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{fruits}}">
+        <checkbox value="{{index}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+  </view>
+  <view class="show-wrap">
+    <view class="show-list">
+      <text>你最喜欢吃的水果是：</text>
+      <view class="show-item" wx:for="{{selected}}">
+        <text>{{item}}</text>
+      </view>
+    </view>
+    <button class="edit" type="default">编辑</button>
+  </view>
+</view>
