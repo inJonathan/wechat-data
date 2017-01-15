@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/select/select"
+    "pages/select/select",
+    "pages/edit/edit"
   ],
   "window":{
     "backgroundTextStyle":"light",

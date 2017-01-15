@@ -1,0 +1,8 @@
+<view class="container">
+  <text>你最喜欢吃的水果是：</text>
+  <view class="edit-item" wx:for="{{selected}}" wx:key="this">
+    <text>{{index+1}}. {{item}}</text>
+    <button type="warn" catchtap="onTapDel" data-index="{{index}}">删除</button>
+  </view>
+  <text wx:if="{{selected.length === 0}}">[空]</text>
+</view>

@@ -1,4 +1,4 @@
-.content {
+.container {
   position: relative;
   width: 100%;
   padding: 40rpx;
@@ -13,12 +13,22 @@
 .checkbox {
   display: inline-block;
   width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
   margin-bottom: 30rpx;
 }
 
 .show-wrap {
+  position: relative;
+  width: 100%;
   padding: 30rpx 0;
   border-top: 1px solid #ccc;
+}
+
+.show-wrap .show-item {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
 }
 
 .show-wrap text {
@@ -31,5 +41,12 @@
   width: 290rpx;
   height: 90rpx;
   line-height: 90rpx;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.show-wrap .count {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  right: 0;
 }
