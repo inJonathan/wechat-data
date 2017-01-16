@@ -69,16 +69,14 @@ Page({
     let g_newFruits = app.globalData.g_newFruits;
 
     if (g_newFruits.length !== 0 && g_newFruits[0] !== 'null') { // 如果存在被删除的水果就更新
-      let new_fruits = this.updateChecked(g_newFruits);
       this.setData({
-        fruits: new_fruits,
-        selected: this.updateSelected(new_fruits)
+        fruits: this.updateChecked(g_newFruits),
+        selected: g_newFruits
       });
     } else if (g_newFruits[0] === 'null') {
-      let new_fruits = this.updateChecked([]);
       this.setData({
-        fruits: new_fruits,
-        selected: this.updateSelected(new_fruits)
+        fruits: this.updateChecked([]),
+        selected: []
       });
     }
   },

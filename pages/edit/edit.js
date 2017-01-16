@@ -1,6 +1,7 @@
 var app = getApp();
 Page({
     data: {
+        selected: [],
         delFruits: []
     },
     onLoad: function (option) {
@@ -8,7 +9,7 @@ Page({
         let selected = option.selected.split(','); // 将传过来的字符串换成数组
         this.setData({
             selected: selected
-        })
+        });
     },
     onTapDel(event) {
         // 删除水果
